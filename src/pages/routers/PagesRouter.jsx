@@ -2,6 +2,7 @@
 
 import React from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
+import { LoginPage } from '../../auth/pages/LoginPage'
 import { Footer } from '../../ui/components/Footer'
 import { Navbar } from '../../ui/components/Navbar'
 import { AboutPage } from '../AboutPage'
@@ -14,6 +15,7 @@ export const PagesRouter = () => {
         <Navbar />
 
         <Routes>
+            <Route path="login" element={ <LoginPage />} />
             <Route path='home' element={ <HomePage /> } />
             <Route path='about' element={ <AboutPage /> } />
             <Route path='contact' element={ <ContactPage /> } />
