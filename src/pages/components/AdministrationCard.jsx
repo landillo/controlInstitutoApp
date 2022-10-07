@@ -1,4 +1,5 @@
-import { Link } from "react-router-dom"
+import { Link } from "react-router-dom";
+import { AdminStudenModal } from "/src/students/components/AdminStudenModal";
 
 
 export const AdministrationCard = () => {
@@ -10,12 +11,13 @@ export const AdministrationCard = () => {
                 <div className="card-body">
                     <h5 className="card-title">Administrar Alumnos</h5>
                     <p className="card-text">Aquí accesas a la administracion de los alumnos, agregar, editar, eliminar y consultar alumnos.</p>
-                    <Link 
-                        to={'adminstudentspage'}
-                        className="btn btn-primary shadow"
-                    >
-                            Administrar
-                    </Link >
+                    
+                    <button type="button" className="btn btn-primary" data-bs-toggle="modal" data-bs-target="#admonStudent">
+                        Administrar
+                    </button>
+                    
+                    < AdminStudenModal />
+                   
                 </div>
             </div>
 

@@ -4,6 +4,7 @@ import React from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
 import { LoginPage } from '../../auth/pages/LoginPage'
 import { AdminStudentsPage } from '../../students/pages/AdminStudentsPage'
+import { ConsultStudentPage } from '../../students/pages/ConsultStudentPage'
 import { Footer } from '../../ui/components/Footer'
 import { Navbar } from '../../ui/components/Navbar'
 import { AboutPage } from '../AboutPage'
@@ -23,6 +24,7 @@ export const PagesRouter = () => {
             <Route path='contact' element={ <ContactPage /> } />
             <Route path='dashboard' element={ <DashboardPage /> } />
             <Route path='/dashboard/adminstudentspage' element={ <AdminStudentsPage /> } />
+            <Route path='/dashboard/consultstudentpage' element={ <ConsultStudentPage /> } />
 
             <Route path='/' element={ <Navigate to='home' /> } />
 
